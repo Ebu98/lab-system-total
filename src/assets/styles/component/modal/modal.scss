@@ -1,0 +1,67 @@
+.modal {
+    &__body {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    &__overlay {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      background: lighten(#4597d165, 10%);
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(5px);
+    }
+  
+    &__container {
+      width: 40%;
+      height: auto;
+      background: #fff;
+      box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      border-radius: 4px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &__close {
+      width: 40px;
+      height: 40px;
+      background: #4596d1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translate(50%, -50%);
+      box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.3);
+      transition: 0.2s all ease-out;
+  
+      &:hover {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+      }
+    }
+  }
+  
+  .fade-enter-active {
+    animation: fade-in all 0.3s ease-out;
+  }
+  
+  .fade-leave-active {
+    animation: fade-in all 0.3s ease-out reverse;
+  }

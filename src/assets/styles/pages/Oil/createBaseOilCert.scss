@@ -1,0 +1,91 @@
+div.base__oil-cert {
+    font-family: Lato;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid rgba(204, 204, 204, 0.6);
+    padding: 20px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+    .__heading {
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      p {
+        margin: 0;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: 700;
+        color: $totalRed;
+      }
+    }
+    .base__oil-form {
+      width: 100%;
+      .__row1 {
+        @include flex(space-between, center);
+        margin-bottom: 10px;
+        .__one {
+          p {
+            margin: 0;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 13px;
+            color: $darkGrey;
+          }
+          select,
+          input {
+            width: 300px;
+            height: 40px;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid lighten(#515151, 30%);
+            border-radius: 4px;
+          }
+        }
+        .__centered {
+          width: 150px;
+          height: 40px;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 20px;
+          .__output {
+            background: #fff;
+            border: 1px solid #ccc;
+            @include flex(center, center);
+            width: 70px;
+            width: 50px;
+            margin: 0 auto;
+            border-radius: 7px;
+            box-sizing: border-box;
+            p {
+              padding: 10px;
+              margin: 0;
+            }
+          }
+        }
+        .__remark {
+          width: 100%;
+          text-align: center;
+          select {
+            width: 100%;
+          }
+        }
+      }
+      .__btn-add-base {
+        width: 164px;
+        height: 40px;
+        background: $totalRed;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        @include flex(center, center);
+        margin: 0 auto;
+        margin-bottom: 10px;
+        transition: 0.4s;
+        &:hover {
+          cursor: pointer;
+          background: #ff2e4d;
+        }
+      }
+    }
+  }

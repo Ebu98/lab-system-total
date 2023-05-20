@@ -1,0 +1,144 @@
+.admin__form-wrapper {
+  
+    // .admin__form-inactive-text {
+    //   position: absolute;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   margin: 0;
+    //   top: 20px;
+    //   color: #fff;
+    //   padding: 10px;
+    //   background: lightBlue;
+    //   border-radius: 4px;
+    //   color: #000;
+    // }
+  
+    background: url('../../../../assets/images/TotalEnergiesadmin.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .admin-section{
+    width: 30%;
+    margin-left: 35%;
+    box-shadow: 0px 4px 12px -2px rgba(226, 209, 209, 0.25);
+    border-radius: 10rem;
+    height: 70%;
+      background-color: white;
+    form.admin-login {
+      box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
+      margin: 0 auto;
+      width: 300px;
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:70px 20px;
+      font-family: Lato;
+      .login-logo {
+        margin-bottom: 50px;
+      }
+      .igg__text-wrap {
+        width: 100%;
+        position: relative;
+        .icons {
+          position: absolute;
+          right: 25px;
+          top: 11px;
+        }
+        .eye {
+          width: 20px;
+          height: 13px;
+          right: 13px;
+          top: 14px;
+          .icon {
+            width: 100%;
+            height: 100%;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .igg-input {
+          width: 100%;
+          height: 45px;
+          padding: 10px;
+          box-sizing: border-box;
+          border: 1px solid darkgrey;
+          box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+          transition: all 0.4s;
+        }
+  
+        .igg-input.igg {
+          margin-bottom: 45px;
+        }
+        .igg-input:focus {
+          border: 1px solid blue;
+          outline: none;
+          box-shadow: none;
+          transition: all 0.4s;
+        }
+        .igg-input:focus + .igg-text .inner,
+        .igg-input:valid + .igg-text .inner {
+          transform: translate(-12px, -30px);
+          font-size: 18px;
+          padding: 0 5px;
+          color:black;
+          font-weight: 500;
+        }
+        .igg-text {
+          position: absolute;
+          left: 12px;
+          width: 100%;
+          pointer-events: none;
+          .inner {
+            position: absolute;
+            transform: translateY(13px);
+            color: black;
+            transition: all 0.4s;
+          }
+        }
+      }
+      .login__btn {
+        margin-top: 30px;
+        width: 100%;
+        height: 45px;
+        color: #fff;
+        background-color: rgba(73, 161, 224, 0.9);
+        border: none;
+        border-radius: 5px;
+        // @include login_btn(
+        //   $blue,
+        //   0px 4px 7px -2px rgba(69, 150, 209, 0.7),
+        //   #398dc9
+        // );
+      }
+      .login__btn-loading {
+        margin-top: 30px;
+        width: 100%;
+        height: 45px;
+        background: rgb(223, 223, 223);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        &:hover {
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+      }
+      .__spinner {
+        width: 40px;
+        height: 40px;
+        img {
+          width: 100%;
+  
+          height: 100%;
+        }
+      }
+    }
+  }
+  }

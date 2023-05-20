@@ -1,0 +1,126 @@
+.admin-sidebar {
+    font-family: Lato;
+    padding: 20px 20px;
+    width: 91px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    height: calc(100vh - 81.25px);
+    background: #fff;
+    border-right: 1px solid blue;
+    transition: width 0.5s ease-out;
+  
+    &-product-category {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      box-sizing: border-box;
+      font-weight: 500;
+      font-size: 13px;
+      transition: 0.3s all ease-out;
+      color: darkGrey;
+
+      &-active {
+        background: rgb(245, 245, 245);
+        font-weight: 700;
+        font-size: 15px;
+      }
+  
+      &-wrapper {
+        height: 0;
+        overflow: hidden;
+        transition: 0.7s all ease-out;
+      }
+  
+      &:hover:not(.admin-sidebar-product-category-active) {
+        cursor: pointer;
+        background: #f3faff;
+      }
+    }
+  
+    &:hover {
+      width: 220px;
+    }
+  
+    &-icons__surround:hover &-product-category-wrapper {
+      display: block;
+    }
+    &-icons__surround:hover .admin-sidebar-product-category-wrapper {
+      border-bottom: 1px solid lighten(blue, 30%);
+      height: calc(var(--order) * 70px);
+    }
+  
+    &-icons__surround:hover
+      .admin-sidebar-text--products
+      .admin-sidebar-text--products-right-arrow
+      img {
+      transform: rotate(90deg);
+    }
+  
+    .admin-sidebar-icons__wrapper {
+      width: 100%;
+      height: 70px;
+    //   @include flex(center, center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      text-decoration: none;
+      box-sizing: border-box;
+      color: blue;
+      &:hover {
+        cursor: pointer;
+        background: #f5faff;
+      }
+      .admin-sidebar-icons {
+        width: 22px;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+  
+      &-active:hover {
+        background: #eee;
+      }
+  
+      &.router-link-exact-active,
+      &-active {
+        background: #eee;
+        border-right: 5px solid blue;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .admin-sidebar-text {
+        display: none;
+        margin: 0;
+        animation: in 0.8s;
+  
+        &--products {
+          &-right-arrow {
+            position: relative;
+            top: 2px;
+            margin-left: 5px;
+  
+            img {
+              transition: 0.3s all ease-out;
+            }
+          }
+        }
+      }
+    }
+    &:hover .admin-sidebar-icons__wrapper {
+    //   @include flex(space-between, center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    &:hover .admin-sidebar-text {
+      display: block;
+      font-size: 14px;
+    }
+  }

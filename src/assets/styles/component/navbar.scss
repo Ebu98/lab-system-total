@@ -1,0 +1,111 @@
+div.nav__bar {
+    @include flex(space-between, center);
+    font-family: Lato;
+    background: #fff;
+    box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $totalRed;
+    .__logo {
+      width: 85px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border-right: 1px solid $totalRed;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .user__details {
+      @include flex(space-between, center);
+      width: 300px;
+      padding-right: 20px;
+      .__left {
+        width: 210px;
+        @include flex(space-between, center);
+        .__wrap {
+          h1 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: $totalRed;
+          }
+          p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: $lightGrey;
+            text-transform: capitalize;
+          }
+          div {
+            @include flex(flex-end, center);
+            .__dot {
+              width: 8px;
+              height: 8px;
+              background: $totalRed;
+              border-radius: 50px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .profile__pic {
+          background: #fff;
+          border-radius: 50px;
+          width: 50px;
+          height: 50px;
+          @include flex(center, center);
+          box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.3);
+          transition: transform 0.4s ease-out;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+          img {
+            padding: 15px;
+          }
+        }
+      }
+      .__separator {
+        width: 1px;
+        background: $totalRed;
+        @include flex(center, center);
+        height: 30px;
+      }
+      .logout__text {
+        display: none;
+      }
+      .logout__text::before {
+        content: '';
+        background: #000;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: -5px;
+        transform: rotate(45deg);
+        left: 50%;
+        margin-left: -5px;
+      }
+      .__logout-icon {
+        background: $totalRed;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        @include flex(center, center);
+        box-shadow: 0px 4px 12px -2px rgba(237, 26, 59, 0.7);
+        transition: all 0.4s ease-out;
+        &:hover .logout__text {
+          display: block;
+          position: absolute;
+          top: 60px;
+          padding: 5px;
+          color: #fff;
+          font-size: 12px;
+          background: #000;
+          border-radius: 4px;
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }

@@ -1,0 +1,112 @@
+.search__wrapper {
+    font-family: Lato;
+    margin: 0 auto;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    .__heading {
+      font-size: 35px;
+      color:crimson;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+    .search__area {
+      width: 35%;
+      height: 50px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+      margin-bottom: 30px;
+      box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.3);
+      border-radius: 50px;
+      overflow: hidden;
+      input {
+        width: 85%;
+        height: 100%;
+        border: none;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        &::placeholder {
+          color: Grey;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      .search__icon {
+        width: 15%;
+        height: 100%;
+        background:crimson;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .__or {
+      font-size: 35px;
+      color:crimson;
+      margin: 0;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    .create__new {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 700px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      .__text {
+        grid-column: 1/4;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        margin: 0;
+        p {
+          margin: 0;
+          padding: 10px;
+          font-weight: 700;
+          color: darkGrey;
+        }
+      }
+      .section__body,
+      .section__body,
+      .section__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 80px;
+        position: relative;
+        border-right: 1px solid #ccc;
+        .image{
+          img{
+            width: 100px;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          background: rgb(241, 241, 241);
+        }
+        .section__one__name {
+          position: absolute;
+          top: 220px;
+          font-weight: 700;
+          color: black;
+          padding: 5px 10px;
+          border: 1px solid Red;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+      & :nth-of-type(4) {
+        border-right: none;
+      }
+    }
+  }
