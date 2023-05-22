@@ -54,7 +54,7 @@ const AdminSidebar = () => {
       </Link>
 
       <div className="admin-sidebar-icons__surround">
-          <Link to="/tab">
+          <Link to="/addProdut">
           <div className="admin-sidebar-icons">
             <ProductIcon/>
           </div>

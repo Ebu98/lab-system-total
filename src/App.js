@@ -37,7 +37,7 @@ const App = () => {
           path="/modal"
           element={<ModalSuccess/>} 
         />
-        <Route exact path="/tab" element={<AddProduct/>} />
+        <Route exact path="/addProduct" element={<AddProduct/>} />
           <Route exact path="/add-user" element={<AddNewUser/>} />
         </Route>
         

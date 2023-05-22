@@ -18,7 +18,6 @@ const AdminNavBar = () => {
       <Link to={{ name: 'LandingPage' }} className="__logo">
         <img src={TotalLogo} alt="total-logo" />
         <div className="img">
-        {/* <TotalLogo/> */}
         </div>
       </Link>
       <div className="user__details">

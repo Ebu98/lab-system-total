@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import "../../../assets/styles/pages/adminAddStaff.scss"
 
 const AddNewUser = () => {
@@ -8,6 +8,30 @@ const AddNewUser = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
+
+
+  // useEffect({
+  //   fetch(variables.API_URL + 'employee/addemployee', {
+  //     method: 'POST',
+  //     headers: {
+  //         'Accept': 'application/json',
+  //         'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       first_name: firstName,
+  //       last_name: lastName,
+  //       igg: igg,
+  //       email: email,
+  //     })
+  // })
+  //     .then(res => res.json())
+  //     .then((result) => {
+  //         alert(result);
+  //         refreshList();
+  //     }, (error) => {
+  //         alert('Failed');
+  //     })
+  // },[])
 
 
   const handleSubmit = e => {
