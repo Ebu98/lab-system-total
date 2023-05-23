@@ -17,6 +17,7 @@ const AdminHome = () => {
   // useEffect(() => {
   //   setStaffs(allStaffs);
   // }, [allStaffs]);
+  // https://github.com/gitdagray/react_login_form/blob/main/package.json
 
   const pagination = {
     pageCount: Math.ceil(staffs.length / perPage),
